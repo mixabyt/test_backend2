@@ -15,7 +15,8 @@ class Product extends Model
         return $this->hasMany(ProductContents::class);
     }
 
-    public function calculateFinalPrice(int $percent) {
-        $this->price = $this->price + ($this->price * $percent / 100);
+    public function calculateFinalPrice(int $percent) : float {
+
+        return $this->price + ($this->price * $percent / 100);
     }
 }

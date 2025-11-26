@@ -9,12 +9,6 @@ use App\Http\Controllers\ShowMainPage;
 
 Route::get('/', fn () => redirect('/uk'));
 Route::get('/{locale}', ShowMainPage::class);
-
-
-
-
 Route::get('/{locale}/products', ProductController::class)->name('products');
-Route::post('/products/xml', [XmlController::class, 'getLink'])->name('products.xml');
+
 Route::get('/products/download/{locale}', [XmlController::class, 'downloadXml'])->name('products.download');
-
-

@@ -48,12 +48,6 @@ php artisan db:seed --class=ProductsSeeder
 ```
 Потрібно зачекати певний час поки виконається seed з базою даних
 
-### 7. Запустити сідери
-
-```bash
-php artisan db:seed --class=MarkupSeeder
-php artisan db:seed --class=ProductsSeeder
-```
 
 ### 8. Запустити task schedule для генерації xml
 

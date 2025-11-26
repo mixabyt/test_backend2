@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\XmlController;
-use Illuminate\Routing\RedirectController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ShowMainPage;
 

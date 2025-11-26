@@ -10,4 +10,12 @@ class Product extends Model
     use HasFactory;
     protected $table = 'products';
     public $timestamps = false;
+
+    public function productContents() {
+        return $this->hasMany(ProductContents::class);
+    }
+
+    public function calculateFinalPrice(int $percent) {
+        $this->price = $this->price + ($this->price * $percent / 100);
+    }
 }

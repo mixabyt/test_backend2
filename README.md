@@ -15,7 +15,7 @@ git clone https://github.com/mixabyt/test_backend2.git
 ```bash
 cp .env.example .env
 ```
-вказати свої параметри для DB, redis
+вказати свої параметри для mysql, redis
 
 ### 3. Встановити залежності PHP
 

@@ -9,4 +9,4 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
 
-Schedule::command('app:generate-xml')->dailyAt('21:12');
+Schedule::command('app:generate-xml')->dailyAt('9:00');
